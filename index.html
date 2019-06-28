@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Sign Up form </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body>
+
+		<header class="main-header">
+		<h1>THE CODE REVIEW</h1>
+		</header>
+
+	<main class="main-wrap">
+		<div class="main">
+			<h2>Signup for our newsletter</h2>
+			<p class="main-line">
+				Get the latest news on how your code is doing right in your inbox
+			</p>
+			<hr id="split">
+			<hr><br>
+		</div>
+
+	</main>
+
+<form action="index.html" method="post">
+	<div class="general-info">
+		
+		<fieldset>
+			
+			<legend class="general">Contact Information</legend>
+
+			<div class="flexbox">
+				<label for="name">Full Name</label>
+				<input type="text" id="name" name="full-name" placeholder="required" required>
+			</div>
+
+			<div class="flexbox">
+				<label for="email">Email Address</label>
+				<input type="email" id="email" name="email-address" placeholder="required" required>
+			</div>
+
+			<div class="flexbox">
+				<label for="phone">Phone Number</label>
+				<input type="tel" id="phone" name="phone-number" placeholder="+1(222) 333-444" required>
+			</div>
+
+			<div class="flexbox">
+				<label for="address">Street Address</label>
+				<input type="text" id="address" name="address">
+			</div>
+
+			<div class="flexbox">
+				<label for="city">City</label>
+				<input type="text" id="city" name="city">
+			</div>
+
+			<div class="flexbox">
+				<label for="state">State</label>
+				<select id="state" name="state">
+					<option selected="" hidden="" disabled="">Choose State</option>
+					<optgroup label="A">
+						<option value="alabama">Alabama</option>
+						<option value="arizona">Arizona</option>
+						<option value="alaska">Alaska</option>
+					</optgroup>
+
+					<optgroup label="C">
+						<option value="california">California</option>
+						<option value="colorado">Colorado</option>
+						<option value="connecticut">Connecticut</option>
+					</optgroup>
+
+					<optgroup label="D">
+						<option value="delaware">Delaware</option>
+						<option value="district of columbia">District of Columbia</option>
+					</optgroup>
+
+					<optgroup label="F">
+						<option value="florida">Florida</option>
+					</optgroup>
+
+					<optgroup label="G">
+						<option value="georgia">Georgia</option>
+					</optgroup>
+
+					<optgroup label="H">
+						<option value="hawaii">Hawaii</option>
+					</optgroup>
+
+					<optgroup label="I">
+						<option value="idaho">Idaho</option>
+						<option value="illinois">Illinois</option>
+						<option value="indiana">Indiana</option>
+					</optgroup>
+
+					<optgroup label="K">
+						<option value="kansas">Kansas</option>
+						<option value="kentucky">Kentucky</option>
+					</optgroup>
+
+					<optgroup label="L">
+						<option value="louisiana">Louisiana</option>
+					</optgroup>
+
+					<optgroup label="M">
+						<option value="maryland">Maryland</option>
+						<option value="michigan">Michigan</option>
+						<option value="mississippi">Mississippi</option>
+					</optgroup>
+
+					<optgroup label="N">
+						<option value="nevada">Nevada</option>
+						<option value="new york">New York</option>
+						<option value="north carolina">North Carolina</option>
+					</optgroup>
+
+					<optgroup label="O">
+						<option value="ohio">Ohio</option>
+						<option value="oklahoma">Oklahoma</option>
+						<option value="oregon">Oregon</option>
+					</optgroup>
+
+					<optgroup label="P">
+						<option value="pennsylvania">Pennsylvania</option>
+					</optgroup>
+
+					<optgroup label="R">
+						<option value="rhode island">Rhode Island</option>
+					</optgroup>
+
+					<optgroup label="S">
+						<option value="south carolina">South Carolina</option>
+						<option value="south dokota">South Dokota</option>
+					</optgroup>
+
+					<optgroup label="T">
+						<option value="texas">Texas</option>
+						<option value="tennessee">Tennessee</option>
+					</optgroup>
+
+					<optgroup label="U">
+						<option value="utah">Utah</option>
+					</optgroup>
+
+					<optgroup label="V">
+						<option value="vermont">Vermont</option>
+						<option value="virginia">Virginia</option>
+					</optgroup>
+
+					<optgroup label="W">
+						<option value="washington">Washington</option>
+						<option value="west virginia">West Virginia</option>
+						<option value="wisconsin">Wisconsin</option>
+						<option value="wyoming">Wyoming</option>
+					</optgroup>			
+
+				</select>
+			</div>
+			<div class="flexbox">
+				<label for="zipcode" class="zp">Zip Code</label>
+				<input type="text" name="zipcode" id="zipcode">
+			</div>
+		</fieldset>
+	</div>
+			<hr class="split">
+
+		<fieldset class="newsletter">
+			<legend class="news-letter">Newsletter</legend>
+				<div class="flex-container">
+					<label class="tag">Select the mewsletter you would like to recieve</label>
+					<input type="checkbox" id="html" value="htmlnews" name="htmlnews"><label for="html" class="put">HTML NEWS</label><br>
+					<input type="checkbox" id="css" value="cssnews" name="cssnews"><label for="css" class="put">CSS NEWS</label><br>
+					<input type="checkbox" id="javascript" value="javascriptnews" name="javascriptnews"><label for="javascript" class="put">JavaScript News</label><br>
+				</div>
+
+				<div class="flex-container">
+					<label class="tag-1">Newsletter format</label>
+					<input type="radio" id="html_news" value="html" name="htmlradio"><label for="html_news" class="put">HTML</label><br>
+					<input type="radio" id="plain_news" value="text" name="htmlradio"><label for="plain_news" class="put">Plain Text</label><br>
+
+				</div>
+
+				<div>
+					<label for="topic" class="tag"> Other topics you'd like to hear about</label>
+					<textarea id="topic" name="topic" placeholder="Hey there you, let us know whatelse you would like to know bout right here :)"></textarea>
+				</div>
+
+		</fieldset>
+
+		<div class="middle">
+			<button type="submit" class="btn btn1">Sign Up</button>
+		</div>
+
+	<footer>
+		<p class="review">Copyright The Code Review</p>
+	</footer>
+
+	</form>
+  </body>
+  </html>
